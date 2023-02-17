@@ -1,6 +1,6 @@
 package com.ProGrad.Shooting.Game.controller;
 
-import com.ProGrad.Shooting.Game.service.VillainService;
+import com.ProGrad.Shooting.Game.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,22 +10,22 @@ import org.springframework.web.bind.annotation.RestController;
 public class VillainController {
 
     @Autowired
-    private VillainService villainService;
+    private GameService villainService;
     @GetMapping("/villain-health")
     public int getVillainHealth() {
-        return villainService.getVillainHealth();
+        return villainService.getHealth();
     }
     @PostMapping("/reduce-villain-health-by-gun-1")
     public void reduceVillainHealthByGunOne() {
-        villainService.reduceVillainHealthByGunOne();
+        villainService.reduceHealthByGunOne();
     }
     @PostMapping ("/reduce-villain-health-by-gun-2")
     public void reduceVillainHealthByGunTwo() {
-        villainService.reduceVillainHealthByGunTwo();
+        villainService.reduceHealthByGunTwo();
     }
     @PostMapping ("/reduce-villain-health-by-gun-3")
     public void reduceVillainHealthByGunThree() {
-        villainService.reduceVillainHealthByGunThree();
+        villainService.reduceHealthByGunThree();
     }
 
     @PostMapping("/enable-shield")
