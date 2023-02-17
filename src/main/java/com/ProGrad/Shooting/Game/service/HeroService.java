@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 public class HeroService {
     private int heroHealth = 100;
 
-
     public int getHeroHealth() {
         return this.heroHealth;
     }

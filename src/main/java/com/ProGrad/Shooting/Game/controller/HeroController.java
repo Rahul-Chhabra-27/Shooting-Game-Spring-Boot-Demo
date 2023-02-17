@@ -16,13 +16,9 @@ public class HeroController {
         return heroService.getHeroHealth();
     }
     @PostMapping ("/reduce-hero-health-by-gun-1")
-    public void reduceHeroHealthByGunOne() {
-        heroService.reduceHeroHealthByGunOne();
-    }
+    public void reduceHeroHealthByGunOne() { heroService.reduceHeroHealthByGunOne(); }
     @PostMapping ("/reduce-hero-health-by-gun-2")
-    public void reduceHeroHealthByGunTwo() {
-        heroService.reduceHeroHealthByGunTwo();
-    }
+    public void reduceHeroHealthByGunTwo() { heroService.reduceHeroHealthByGunTwo(); }
     @PostMapping ("/reduce-hero-health-by-gun-3")
     public void reduceHeroHealthByGunThree() {
         heroService.reduceHeroHealthByGunThree();

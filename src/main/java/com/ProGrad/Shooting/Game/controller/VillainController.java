@@ -34,7 +34,7 @@ public class VillainController {
     }
 }
 
-// Functions that I want..
+// Functions that I have to..
 // 1. getHeroHealth.
 // 2. getVillainHealth.
 // 3. ReduceVillainHealthByGunOne
